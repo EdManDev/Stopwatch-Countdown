@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js"></script>
+  <header>
+    <h1>Stopwatch & Countdown</h1>
+  </header>
+  <title>Stopwatch & Countdown</title>
+</head>
+
+<body>
+  <!-- Stopwatch -->
+  <div class="card">
+    <h1>Stopwatch</h1>
+    <!-- anim_number -->
+    <div class="anim_number">
+      <span id="sw_h">00</span>:
+      <span id="sw_m">00</span>:
+      <span id="sw_s">00</span>:
+      <span id="sw_ms">00</span>
+      <br />
+      <br />
+    </div>
+    <!-- Blue button -->
+    <input type="button" value="Start" id="sw_start" />
+    <input type="button" value="Pause" id="sw_pause" />
+    <input type="button" value="Stop" id="sw_stop" />
+    <input type="button" value="Reset" id="sw_reset" />
+    <br />
+    <br />
+    <span id="sw_status">Idle</span>
+  </div>
+  <!-- <div class="card">
+    Don't run them at the same time ... it's a demo :-)
+  </div> -->
+  <!-- Countdown -->
+  <div class="card">
+    <h1>Countdown</h1>
+    <div class="anim_number">
+      <!-- anim_number -->
+      <span id="cd_h">00</span>:
+      <span id="cd_m">00</span>:
+      <span id="cd_s">00</span>:
+      <span id="cd_ms">00</span>
+      <br />
+      <br />
+    </div>
+    <!-- Blue button -->
+    <input type="button" value="Start" id="cd_start" />
+    <input type="button" value="Pause" id="cd_pause" />
+    <input type="button" value="Stop" id="cd_stop" />
+    <input type="button" value="Reset" id="cd_reset" />
+    <br />
+    <br />
+    <input type="text" value="15" id="cd_seconds" />
+    Secs
+    <br />
+    <br />
+    <span id="cd_status">Idle</span>
+  </div>
+</body>
+
+</html>
